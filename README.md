@@ -1,5 +1,9 @@
 # Brazanation Documents - Golang
 
+[![Build Status](https://img.shields.io/travis/brazanation/go-documents/master.svg?style=flat-square)](https://travis-ci.org/brazanation/go-documents)
+[![Codecov branch](https://img.shields.io/codecov/c/github/brazanation/go-documents/master.svg?style=flat-square)](https://codecov.io/gh/brazanation/go-documents)
+[![GoDoc](https://img.shields.io/badge/godoc-reference-5272B4.svg?style=flat-square)](https://godoc.org/github.com/brazanation/go-documents)
+[![Go Report Card](https://goreportcard.com/badge/github.com/brazanation/go-documents?style=flat-square)](https://goreportcard.com/report/github.com/brazanation/go-documents)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](https://github.com/brazanation/go-documents/blob/master/LICENSE)
 
 A Golang library to provide Brazilian Documents safer, easier and fun!
