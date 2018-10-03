@@ -6,7 +6,8 @@ import (
 )
 
 func main() {
-	cnh := brdocs.CNH("53197826392")
+	cnh := brdocs.CNH("53197826392", nil)
+	//cnh := brdocs.CNH{"53197826392"}
 
 	fmt.Println(cnh)
 	fmt.Println(cnh.Format())
