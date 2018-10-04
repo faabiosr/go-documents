@@ -1,15 +1,21 @@
 package brdocs
 
-//type CNH struct {
-//	number string
-//}
-
-type CNH string
-
-func (c CNH) Format() string {
-	return string(c)
+type CNH struct {
+	cnh string
 }
 
-func (c CNH) IsValid() bool {
+func NewCNH(cnh string) *CNH {
+	return &CNH{cnh}
+}
+
+func (c *CNH) Format() string {
+	return c.cnh
+}
+
+func (c *CNH) IsValid() bool {
 	return true
+}
+
+func (c *CNH) Assert() error {
+	return nil
 }

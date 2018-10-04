@@ -1,5 +1,5 @@
 package brdocs
 
-type Validatable interface {
+type Validator interface {
 	IsValid() bool
 }

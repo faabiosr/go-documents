@@ -6,12 +6,10 @@ import (
 )
 
 func main() {
-	cnh := brdocs.CNH("53197826392", nil)
+	doc := brdocs.NewCNH("53197826392")
+	f(doc)
+	fmt.Println(v(doc))
 	//cnh := brdocs.CNH{"53197826392"}
-
-	fmt.Println(cnh)
-	fmt.Println(cnh.Format())
-	fmt.Println(cnh.IsValid())
 	//	cnh := brdocs.NewCNH("53197826392")
 	//
 	//	fmt.Println(cnh.Format())
@@ -32,4 +30,16 @@ func main() {
 	//	if ok, err := cnh.IsValid(); !ok {
 	//		panic(err)
 	//	}
+}
+
+func f(ft brdocs.Formatter) {
+	fmt.Println(ft.Format())
+}
+
+func v(vt brdocs.Validator) error {
+	if !vt.IsValid() {
+		return fmt.Errorf("Validation failed")
+	}
+
+	return nil
 }

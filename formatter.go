@@ -1,5 +1,5 @@
 package brdocs
 
-type Formatable interface {
+type Formatter interface {
 	Format() string
 }
